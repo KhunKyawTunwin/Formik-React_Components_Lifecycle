@@ -1,4 +1,4 @@
-const TextError = (props) => {
-  return <div className="error">{props.children}</div>;
+const TextError = ({ children }) => {
+  return <div className="error">{children}</div>;
 };
 export default TextError;

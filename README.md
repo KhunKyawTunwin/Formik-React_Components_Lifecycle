@@ -14,3 +14,5 @@ Currently, two official plugins are available:
 ### 2. Handling form submission
 
 ### 3. Validation and error message
+
+## Formik Run Validation After any change in the form
