@@ -16,3 +16,43 @@ Currently, two official plugins are available:
 ### 3. Validation and error message
 
 ## Formik Run Validation After any change in the form
+
+## Reusable Formik Controls
+
+### FormikContainer component
+
+### FormikControl component
+
+### Input
+
+### Textarea
+
+### Select
+
+### RadioButtons
+
+### Checkboxes
+
+### DatePicker
+
+### Registration, Login and Course Enrollment
+
+### UI Component Library
+
+## Select FormikControl
+
+Props
+control = "select"
+label ="Select a topic"
+name ='selectOptions'
+options =[{key, value}]
+
+## Radio FormikControl
+
+Props
+control = "select"
+label ="Select a topic"
+name ='selectOptions'
+options =[{key, value}]
+
+## CheckBox Group FormikControl
