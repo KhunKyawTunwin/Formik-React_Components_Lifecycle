@@ -28,6 +28,7 @@ const FormikContainer = () => {
     selectOption: "",
     radioOption: "",
     checkboxOption: [],
+    birthDate: null,
   };
   const validationSchema = Yup.object({
     email: Yup.string().required("Required form field!"),
@@ -35,12 +36,17 @@ const FormikContainer = () => {
     selectOption: Yup.string().required("Required!"),
     radioOption: Yup.string().required("Required!"),
     checkboxOption: Yup.array()
-      .required("Required!")
-      .min(1, "At least one option must be selected"),
+      .min(1, "At least one option must be selected")
+      .required("Required!"),
+    birthDate: Yup.date()
+      .max(new Date(Date.now() - 567648000000), "You must be at least 18 years")
+      .required("Required"),
   });
 
-  const onSubmit = (values) => console.log("Form Data", values);
-
+  const onSubmit = (values) => {
+    console.log("Form Data", values);
+    console.log("Form Data with json", JSON.parse(JSON.stringify(values)));
+  };
   return (
     <Formik
       initialValues={initialValues}
@@ -82,6 +88,8 @@ const FormikContainer = () => {
             name="checkboxOption"
             options={checkboxOptions}
           />
+
+          <FormikControl control="date" label="Pick a date" name="birthDate" />
 
           <button type="submit">Submit</button>
         </Form>

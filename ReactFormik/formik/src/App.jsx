@@ -1,12 +1,17 @@
-import FormikContainer from "./components/formik/FormikContainer";
-
 import "./App.css";
+import { ChakraProvider } from "@chakra-ui/react";
+import EnrollmentForm from "./components/formik/EnrollmentForm";
+import ChakraInput from "./components/formik/ChakraInput";
+import LoginForm from "./components/formik/LoginForm";
 
 const App = () => {
   return (
-    <div className="App">
-      <FormikContainer />
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        {/* <EnrollmentForm /> */}
+        <LoginForm />
+      </div>
+    </ChakraProvider>
   );
 };
 export default App;

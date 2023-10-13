@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
 }
+/*
 
 label {
   font-weight: bold;
@@ -12,7 +13,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  display: block;
+  display: inline-block;
   width: 400px;
   padding: 6px 12px;
   font-size: 14px;
@@ -23,6 +24,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+*/
 
 .form-control {
   margin-bottom: 20px;

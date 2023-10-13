@@ -9,9 +9,10 @@ const CheckboxGroup = (props) => {
       <label>{label}</label>
       <Field name={name} {...rest}>
         {({ field }) => {
+          console.log("Field from checkbox is", field);
           return options.map((option) => {
             return (
-              <div key={option.value}>
+              <div key={option.key}>
                 <input
                   type="checkbox"
                   id={option.value}

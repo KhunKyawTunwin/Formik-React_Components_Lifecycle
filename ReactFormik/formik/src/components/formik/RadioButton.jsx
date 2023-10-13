@@ -1,6 +1,5 @@
 import { ErrorMessage, Field } from "formik";
 import TextError from "./TextError";
-console.log("Field data from radio", Field);
 
 const RadioButton = (props) => {
   const { label, name, options, ...rest } = props;
